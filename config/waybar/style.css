@@ -1,0 +1,51 @@
+@define-color fg #ffffff;
+@define-color bg #080808;
+
+@define-color active #f5a191;
+
+* {
+	border: none;
+	border-radius: 0;
+	font-family: JetBrains Mono Nerd Font;
+	font-size: 12px;
+	padding: 0 2px;
+	margin: 0;
+}
+
+window#waybar {
+	background-color: transparent;
+	color: @fg;
+}
+
+#mode,
+#clock,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#network,
+#pulseaudio,
+#backlight,
+#disk,
+#idle_inhibitor,
+#tray,
+#workspaces {
+	background-color: transparent;
+	color: @fg;
+}
+
+#workspaces button {
+	background-color: transparent;
+	color: @fg;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    box-shadow: inherit;
+}
+
+#workspaces button.active,
+button.focused {
+	background-color: transparent;
+	color: @active;
+}
