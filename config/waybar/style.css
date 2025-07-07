@@ -1,12 +1,9 @@
-@define-color fg #ffffff;
-@define-color bg #080808;
-
 @define-color active #f5a191;
 
 * {
 	border: none;
 	border-radius: 0;
-	font-family: JetBrains Mono Nerd Font;
+	font-family: jetbrains mono nerd font;
 	font-size: 12px;
 	padding: 0 2px;
 	margin: 0;
@@ -14,29 +11,23 @@
 
 window#waybar {
 	background-color: transparent;
-	color: @fg;
+	color: white;
 }
 
-#mode,
 #clock,
 #cpu,
 #memory,
-#temperature,
 #battery,
-#network,
 #pulseaudio,
-#backlight,
-#disk,
-#idle_inhibitor,
 #tray,
 #workspaces {
 	background-color: transparent;
-	color: @fg;
+	color: white;
 }
 
 #workspaces button {
 	background-color: transparent;
-	color: @fg;
+	color: white;
 }
 
 #workspaces button:hover {
