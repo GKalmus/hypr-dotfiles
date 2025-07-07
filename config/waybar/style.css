@@ -1,33 +1,23 @@
-@define-color active #f5a191;
-
 * {
 	border: none;
 	border-radius: 0;
 	font-family: jetbrains mono nerd font;
 	font-size: 12px;
-	padding: 0 2px;
+	padding: 2px;
 	margin: 0;
 }
 
-window#waybar {
-	background-color: transparent;
-	color: white;
-}
-
+window#waybar,
 #clock,
 #cpu,
 #memory,
 #battery,
 #pulseaudio,
 #tray,
-#workspaces {
-	background-color: transparent;
+#workspaces button{
+	background: transparent;
 	color: white;
-}
-
-#workspaces button {
-	background-color: transparent;
-	color: white;
+	border-bottom: 2px solid transparent;
 }
 
 #workspaces button:hover {
@@ -35,8 +25,12 @@ window#waybar {
     box-shadow: inherit;
 }
 
-#workspaces button.active,
-button.focused {
-	background-color: transparent;
-	color: @active;
+#workspaces button.active, button.focused {
+	background: transparent;
+	color: #f5a191;
+	border-bottom: 2px solid;
+}
+
+#pulseaudio.muted {
+	opacity: 0.5;
 }
